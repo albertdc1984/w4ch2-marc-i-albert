@@ -1,5 +1,7 @@
 import Lletra from "./components/Lletra/Lletra";
 import lettersList from "./data/lettersData";
+import Paraula from "./components/Paraula/Paraula";
+import Utilitzada from "./components/Utilitzada/Utilitzada";
 
 function App() {
   return (
@@ -25,10 +27,23 @@ function App() {
           <line className="stage1" x1="16" y1="80" x2="32" y2="80"></line>
         </svg>
       </div>
-      <ul className="guess-letters"></ul>
+      <ul className="guess-letters">
+        <Paraula />
+        <Paraula />
+        <Paraula />
+        <Paraula />
+        <Paraula />
+      </ul>
       <section className="used-letters-container">
         <h2>Used letters</h2>
-        <ul className="used-letters"></ul>
+        <ul className="used-letters">
+          <Utilitzada />
+          <Utilitzada />
+          <Utilitzada />
+          <Utilitzada />
+          <Utilitzada />
+          <Utilitzada />
+        </ul>
       </section>
       <section className="game-result">You're dead!</section>
       <ul className="letters">

@@ -4,6 +4,7 @@ import Paraula from "./components/Paraula/Paraula";
 import Utilitzada from "./components/Utilitzada/Utilitzada";
 import EstatdelJoc from "./components/EstatDelJoc/EstatDelJoc";
 import Penjat from "./components/Penjat/Penjat";
+import paraulaObject from "./data/paraules";
 
 function App() {
   return (
@@ -14,11 +15,10 @@ function App() {
         </svg>
       </div>
       <ul className="guess-letters">
-        <Paraula />
-        <Paraula />
-        <Paraula />
-        <Paraula />
-        <Paraula />
+        {paraulaObject.map((lletraData) => {
+          debugger;
+          return <Paraula lletra={lletraData} />;
+        })}
       </ul>
       <section className="used-letters-container">
         <h2>Used letters</h2>

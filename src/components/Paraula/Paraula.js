@@ -1,8 +1,7 @@
-const Paraula = (lletra) => {
+const Paraula = ({ lletra }) => {
   return (
     <>
-      <li className="guess-letter empty"></li>
-      <li className="guess-letter">A</li>
+      <li className="guess-letter empty">{lletra.text}</li>
     </>
   );
 };

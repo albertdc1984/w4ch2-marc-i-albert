@@ -31,11 +31,7 @@ function App() {
       </ul>
       <section className="used-letters-container">
         <h2>Used letters</h2>
-        <ul className="used-letters">
-          <li className="used-letter">B,&nbsp;</li>
-          <li className="used-letter">B,&nbsp;</li>
-          <li className="used-letter">B</li>
-        </ul>
+        <ul className="used-letters"></ul>
       </section>
       <section className="game-result">You're dead!</section>
       <ul className="letters">

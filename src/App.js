@@ -22,13 +22,7 @@ function App() {
           <line className="stage1" x1="16" y1="80" x2="32" y2="80"></line>
         </svg>
       </div>
-      <ul className="guess-letters">
-        <li className="guess-letter empty"></li>
-        <li className="guess-letter">A</li>
-        <li className="guess-letter empty"></li>
-        <li className="guess-letter">A</li>
-        <li className="guess-letter empty"></li>
-      </ul>
+      <ul className="guess-letters"></ul>
       <section className="used-letters-container">
         <h2>Used letters</h2>
         <ul className="used-letters"></ul>

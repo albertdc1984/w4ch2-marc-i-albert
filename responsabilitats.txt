@@ -1,0 +1,47 @@
+COMPONENTS
+
+Lletra
+- S'ha de mostrar
+- Ha de rebre un parametre, que es una lletra, d'app
+- Ha de cridar un actionOnClick
+
+Paraula
+- Mostrar barres baixes (estat per defecte)
+- Reb una lletra d'app
+- Mostra la lletra en funcio de si coincideix amb la propietat text d'algun objecte de l'array PARAULA
+
+Utilitzades
+- Accio afegir lletres
+- Comencara essent una array buida
+- Reb una lletra d'app
+- L'ensenya (lafegeix a larray), sempre que no sigui repetida
+
+Penjat
+- Reb un parametre d'app (true o false)
+- En funcio de el parametre rebut, ensenya un svg mes o no.
+
+App
+- Comptador d'errors, augmentara el seu valor cada cop que es reb una lletra, es fa loop per l'array d'objectes i aquesta no coincidexi amb cap propietat text.
+- Ha d'importar l'array de paraules i triarne una aleatoriament per jugar.
+- Ha de tenir la funcio actionOnClick, que comporovara si la lletra sha utilitzat abans i si esta a larray dobjectes Paraula, ha de retornar
+
+
+
+
+
+LLISTAT D'ACCIONS
+- Afegir lletres a l'array del component de Utilitzades, ho fa app
+- Mostrar les lletres encertades, ho fa paraula
+- Comptar els errors, ho fa la app
+- Definir l'estat del joc, ho fa la app
+- Mostrar per parts el penjat, ho fa el penjat
+
+
+
+DADES
+- Array d'objectes amb totes les lletres (lletra, encertada, utilitzada)
+- Array amb les paraules
+- Array amb les lletres Utilitzades
+- Comptador d'errors
+- Estat del joc
+

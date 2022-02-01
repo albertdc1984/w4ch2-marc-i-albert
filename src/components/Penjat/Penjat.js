@@ -1,4 +1,4 @@
-const Penjat = () => {
+const Penjat = ({ conditional }) => {
   return (
     <>
       <line className="stage11" x1="62" y1="70" x2="56" y2="56"></line>

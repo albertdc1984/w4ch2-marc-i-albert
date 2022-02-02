@@ -1,7 +1,9 @@
-const Lletra = ({ text }) => {
+const Lletra = ({ text, actionOnClick }) => {
   return (
     <li className="letter">
-      <a href={text.text}>{text.text.toUpperCase()}</a>
+      <a href={text.text} onClick={actionOnClick}>
+        {text.text.toUpperCase()}
+      </a>
     </li>
   );
 };

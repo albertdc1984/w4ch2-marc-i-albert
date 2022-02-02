@@ -46,6 +46,18 @@ svg > * {
 .game-result {
   font-size: 60px;
 }
+.win {
+  display: none;
+}
+.win-active {
+  display: block;
+}
+.lose {
+  display: none;
+}
+.lose-active {
+  display: block;
+}
 .letters {
   margin: 0;
   padding: 0;

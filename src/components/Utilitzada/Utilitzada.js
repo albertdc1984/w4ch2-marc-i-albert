@@ -1,9 +1,7 @@
-const Utilitzada = (lletra) => {
-  // if
-  // const lletresUtilitzades = []
+const Utilitzada = (text) => {
   return (
     <>
-      <li className="used-letter">B,&nbsp;</li>
+      <li className="used-letters"> {text.text},&nbsp;</li>
     </>
   );
 };

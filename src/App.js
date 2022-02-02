@@ -7,6 +7,10 @@ import Penjat from "./components/Penjat/Penjat";
 import paraulaObject from "./data/paraules";
 
 function App() {
+  let guessedLetters = [];
+  const afegitGuessedLetters = (lletra) => {
+    guessedLetters.push(lletra.text);
+  };
   return (
     <>
       <div className="hangman-container">
@@ -15,26 +19,32 @@ function App() {
         </svg>
       </div>
       <ul className="guess-letters">
-        {paraulaObject.map((lletraData) => {
-          debugger;
-          return <Paraula lletra={lletraData} />;
+        {paraulaObject.map((lletraData, index) => {
+          return <Paraula key={index} lletra={lletraData} />;
         })}
       </ul>
       <section className="used-letters-container">
         <h2>Used letters</h2>
         <ul className="used-letters">
-          <Utilitzada />
-          <Utilitzada />
-          <Utilitzada />
-          <Utilitzada />
-          <Utilitzada />
-          <Utilitzada />
+          {guessedLetters.map((lletraData) => {
+            return <Utilitzada text={lletraData} />;
+          })}
         </ul>
       </section>
       <EstatdelJoc />
+
       <ul className="letters">
-        {lettersList.map((lletraData) => {
-          return <Lletra text={lletraData} />;
+        {lettersList.map((lletraData, index) => {
+          return (
+            <Lletra
+              key={index}
+              text={lletraData}
+              actionOnClick={(event) => {
+                afegitGuessedLetters(lletraData);
+                event.preventDefault();
+              }}
+            />
+          );
         })}
       </ul>
     </>
